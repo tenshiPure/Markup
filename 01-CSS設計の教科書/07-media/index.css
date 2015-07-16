@@ -1,0 +1,28 @@
+.media:before,
+.media:after {
+	display: table;
+	content: " ";
+}
+
+.media:after {
+	cleat: both;
+}
+
+.media__image {
+	float: left;
+	margin-right: 10px;
+}
+
+.media__image--rev {
+	float: right;
+	margin-right: 0px;
+	margin-left: 10px;
+}
+
+.media__image > img {
+	display: block;
+}
+
+.media__body {
+	overflow: hidden;
+}

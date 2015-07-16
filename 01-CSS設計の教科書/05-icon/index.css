@@ -1,0 +1,30 @@
+/* CSSスプライト */
+.icon {
+	display: inline-block;
+	background-image: url(sheets.png);
+}
+.icon--edit {
+	width: 77px;
+	height: 77px;
+	background-position: 0 0px;
+}
+
+/* アイコンフォント */
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('http://weloveiconfonts.com/api/fonts/fontawesome/fontawesome-webfont.eot');
+	src: url('http://weloveiconfonts.com/api/fonts/fontawesome/fontawesome-webfont.eot?#iefix')format('eot'),
+	     url('http://weloveiconfonts.com/api/fonts/fontawesome/fontawesome-webfont.woff')format('woff'),
+	     url('http://weloveiconfonts.com/api/fonts/fontawesome/fontawesome-webfont.ttf')format('truetype'),
+	     url('http://weloveiconfonts.com/api/fonts/fontawesome/fontawesome-webfont.svg#FontAwesomeRegular')format('svg');
+}
+.font-icon:before {
+	line-height: 1;
+	font-family: 'FontAwesome', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.font-icon--home:before {
+	content: "\f015";
+}

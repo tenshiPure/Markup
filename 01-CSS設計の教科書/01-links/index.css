@@ -1,0 +1,33 @@
+#sidebar {
+	border: 1px solid #CCC;
+	width: 300px;
+	background-color: #FAFAFA;
+}
+.menus > li {
+	border-bottom: 1px dashed #CCC;
+}
+.menus > li > a {
+	display: block;
+	padding: 0.5em 1em;
+	font-weight: bold;
+	color: #489;
+}
+.menus > li > a:hover {
+	background-color: #FFFFFF;
+}
+
+.widget {
+	padding: 10px;
+}
+.links > li {
+	border-bottom: 0;
+}
+.links > li > a {
+	padding: 0.5em;
+	background-color: #6AB;
+	font-weight: normal;
+	color: #FFF;
+}
+.links > li > a >:hover {
+	background-color: #7BC;
+}

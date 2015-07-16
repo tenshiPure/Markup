@@ -1,0 +1,18 @@
+.mbm { /* MarginBottom Middle */
+	margin-bottom: 20px;
+}
+
+.font-sizeL {
+	font-size: 24px;
+}
+
+.quite {
+	color: #DDD;
+	font-size: 12px;
+}
+
+.loud {
+	color: #C0D;
+	font-weight: bold;
+	font-size: 18px;
+}

@@ -1,0 +1,18 @@
+.tableview {
+	overflow: hidden;
+	border-radius: 8px;
+	border: 1px solid #999;
+}
+.tableview__item > a{
+	display: block;
+	margin: -1em;
+	padding: 1em;
+	text-decoration: none;
+}
+.tableview__item {
+	padding: 1em;
+	background-color: #DDD;
+}
+.tableview__item + .tableview__item {
+	border-top: 1px solid #EEE;
+}
