@@ -125,6 +125,19 @@ li {
 	border-top: 1px solid #000;
 }
 
+.side__link img {
+	height: 40px;
+	float: left;
+	margin-left: -0.5em;
+	margin-top: -0.5em;
+	margin-right: 0.2em;
+}
+
+.side__link p {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
 
 
 #layout-contents {
