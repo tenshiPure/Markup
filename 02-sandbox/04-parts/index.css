@@ -1,0 +1,150 @@
+li {
+	list-style:none;
+}
+
+#layout-header {
+	height: 50px;
+}
+
+#layout-side {
+	background-color: #AFA;
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+
+.side {
+	padding: 0px;
+	margin: 0px;
+}
+.side__link {
+	padding: 1em;
+	background-color: #AFF;
+}
+.side__link--active {
+	background-color: #FFF;
+}
+.header__name {
+	background-color: #FAA;
+	width: 20%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+.header__name > p {
+	margin-left: 1em;
+	margin-top: 0.5em;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.header__nav {
+	background-color: #FAF;
+	width: 60%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+.nav {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	padding: 0;
+	margin-top: 0.5em;
+}
+.nav__item {
+	display: table-cell;
+}
+.nav__item > a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.header__icons {
+	background-color: #AAA;
+	width: 20%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+.header__icons:after {
+	clear: both;
+}
+.icon {
+	display: inline-block;
+	background-image: url(sprite-sheet.png);
+}
+.icon--person {
+	width: 32px;
+	height: 32px;
+	background-position: -365 2;
+}
+.icon--information {
+	width: 32px;
+	height: 32px;
+	background-position: -260 -206;
+}
+.icon--config {
+	width: 32px;
+	height: 32px;
+	background-position: -940 2;
+}
+.header__icons span {
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+}
+
+.side__link > a {
+	display: block;
+	margin: -1em;
+	padding: 1em;
+	text-decoration: none;
+}
+
+#layout-side:after {
+	clear: both;
+}
+
+
+#layout-contents {
+	background-color: #AAF;
+	width: 100%;
+	height: 100%;
+}
+
+#layout-contents p {
+	margin-top: 0;
+	color: #FFF;
+}
+
+.font-small {
+	font-size: 8px;
+}
+
+.font-large {
+	font-size: 24px;
+}
+
+.button {
+	color: #FFF;
+	background-color: #248;
+	font-weight: bold;
+	font-size: 1em;
+	padding: 5px 10px;
+	border-style: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	text-decoration: none;
+}
+.button:hover {
+	background-color: #24D;
+	cursor: pointer;
+}
+.button:active{
+    padding-top: 6px;
+    padding-bottom: 4px;
+    color:#e0ebf5;
+}
