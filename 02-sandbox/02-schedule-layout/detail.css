@@ -1,0 +1,24 @@
+.info {
+	width: 70%;
+}
+.info__base {
+	font-size: 1.5em;
+	padding-left: 1em;
+}
+.info__note {
+	padding-left: 2em;
+}
+
+#contents {
+	overflow: scroll;
+}
+.attendances_instrument {
+	padding-left: 1em;
+	margin-bottom: 0px;
+}
+
+.attendances__item {
+	padding-left: 2em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}

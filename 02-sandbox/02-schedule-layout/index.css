@@ -1,0 +1,16 @@
+.schedules {
+	width: 100%;
+	height: 100%;
+	font-size: 1.5em;
+	overflow: scroll;
+}
+.schedules hr {
+	width: 90%;
+	margin-left: -1em;
+}
+.schedules__item  {
+	padding-left: 1em;
+}
+.schedules__item > a {
+	text-decoration: none;
+}
