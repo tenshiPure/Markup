@@ -1,0 +1,18 @@
+html,body {
+	height: 100%;
+}
+
+#header {
+	width: 80%;
+	margin: 0 auto;
+}
+.header__name {
+	padding-top: 0.5em;
+}
+
+#contents {
+	background-color: #AFF;
+	width: 80%;
+	height: 80%;
+	margin: 0 auto;
+}
