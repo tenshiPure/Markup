@@ -20,9 +20,12 @@
 	content: " ";
 }
 
+.media {
+	margin-bottom: 3em;
+}
+
 .media:after {
 	clear: both;
-	margin-top: 3em;
 }
 
 .media__image--left {

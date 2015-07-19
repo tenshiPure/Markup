@@ -101,6 +101,7 @@ li {
 .side__link {
 	padding: 1em;
 	background-color: #AFF;
+	line-height: 1em;
 }
 .side__link:hover  {
 	background-color: #CFF;
@@ -126,11 +127,11 @@ li {
 }
 
 .side__link img {
-	height: 40px;
+	height: 3em;
 	float: left;
-	margin-left: -0.5em;
-	margin-top: -0.5em;
-	margin-right: 0.2em;
+	margin-left: -1em;
+	margin-top: -1em;
+	margin-right: 0.5em;
 }
 
 .side__link p {
