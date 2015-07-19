@@ -1,19 +1,35 @@
 .links {
 	width: 100%;
 	height: 100%;
-	font-size: 1.5em;
+	font-size: 2em;
 	overflow: scroll;
-}
-.links hr {
-	width: 90%;
-	margin-left: -1em;
+	padding-left: 0;
 }
 .link__item  {
-	padding-left: 1em;
+	line-height: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+}
+.links li {
+	list-style: none;
+}
+.link__item img {
+	height: 2em;
+	float: left;
 }
 .link__item span {
 	margin-left: 2em;
 }
-.link__item > a {
+.link__item a {
+	display: block;
 	text-decoration: none;
+	padding: 0.5em;
+	margin: -0.5em;
+}
+.link__item + .link__item {
+	border-top: 1px solid red;
+}
+.link__item a:hover {
+	background-color: #CFF;
 }
