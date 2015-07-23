@@ -9,10 +9,10 @@
 		<script src="index.js"></script>
 	</head>
 	<body>
-		<div id="header">
+		<div id="layout-header">
 			a
 		</div>
-		<div id="left">
+		<div id="layout-left">
 			<ol>
 				<li>グループ</li>
 				<li>グループ</li>
@@ -61,82 +61,87 @@
 				<li>グループ</li>
 			</ol>
 		</div>
-		<div id="main">
-			<ul class="tab">
+		<div id="layout-main">
+			<ul id="layout-tab">
 				<li class="select">チャット</li>
 				<li>予定</li>
 				<li>リンク</li>
 			</ul>
-			<ul class="content">
-				<li>
-					<ol>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-						<li>メッセージ</li>
-					</ol>
-				</li>
-				<li class="hide">
-					予定です
-				</li>
-				<li class="hide">
-					リンクです
-				</li>
+			<div id="layout-content">
+				<div class="layout-tabbed">
+					<div class="layout-content">
+						<ol>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+							<li>メッセージ</li>
+						</ol>
+					</div>
+					<div class="layout-input">
+						<textarea></textarea>
+					</div>
+				</div>
 
-				<div id="input">
-					input
+				<div class="layout-tabbed hide">
+					<div class="layout-content">
+						<p>予定です</p>
+					</div>
+					<div class="layout-input">
+						<select><option>aaa</option></select>
+					</div>
+				</div>
+
+				<div class="layout-tabbed hide">
+					<div class="layout-content">
+						<p>リンク</p>
+					</div>
+					<div class="layout-input">
+						<input type="text"><br>
+						<input type="text">
+					</div>
 				</div>
 			</ul>
 		</div>
 	</body>
 </html>
-
-メッセージとインプットをdiv-divにして、それを3セット作れば分けなくて済む？
-ul-liである必要は？
-フォントサイズ、角○

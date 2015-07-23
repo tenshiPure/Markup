@@ -3,7 +3,7 @@ html, body {
 	margin: 0;
 }
 
-#header {
+#layout-header {
 	background-color: #FAA;
 	position: fixed;
 	top: 0;
@@ -12,7 +12,7 @@ html, body {
 	height: 3em;
 }
 
-#left {
+#layout-left {
 	background-color: #AAF;
 	position: fixed;
 	top: 3em;
@@ -22,7 +22,7 @@ html, body {
 	overflow: scroll;
 }
 
-#main {
+#layout-main {
 	background-color: #AFA;
 	position: fixed;
 	top: 3em;
@@ -38,10 +38,10 @@ html, body {
 }
 
 
-.tab > li, .content > li {
+#layout-tab > li{
 	list-style:none;
 }
-.tab {
+#layout-tab {
 	padding: 0;
 	margin: 0;
 	margin-left: 1em;
@@ -51,17 +51,20 @@ html, body {
 	top: 4em;
 	bottom: 6em;
 }
-.tab li {
+#layout-tab li {
 	background: #ccc;
 	padding: 5px 25px;
 	float: left;
 	cursor: pointer;
 	margin-right: 0.5em;
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	border: 1px solid #000;
 }
-.tab li.select {
+#layout-tab li.select {
 	background: #eee;
 }
-.content {
+#layout-content {
 	padding: 0;
 	margin: 0;
 	margin-left: 1em;
@@ -70,22 +73,22 @@ html, body {
 	left: 20%;
 	right: 0px;
 	top: 6em;
-	bottom: 20%;
+	bottom: 0px;
 	background: #eee;
+	overflow: scroll;
+}
+.layout-tabbed {
+	height: 100%;
+}
+.layout-content {
+	background: #FFA;
+	height: 80%;
 	overflow: scroll;
 }
 .hide {
 	display: none;
 }
-#input {
+.layout-input {
 	background-color: #AAA;
-	padding: 0;
-	margin: 0;
-	margin-left: 1em;
-	margin-right: 1em;
-	position: fixed;
-	left: 20%;
-	right: 0px;
-	top: 80%;
-	bottom: 0;
+	height: 20%;
 }

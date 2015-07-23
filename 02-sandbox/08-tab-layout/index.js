@@ -1,11 +1,11 @@
 $(function() {
-	$('.tab li').click(function() {
-		var index = $('.tab li').index(this);
+	$('#layout-tab li').click(function() {
+		var index = $('#layout-tab li').index(this);
 
-		$('.content > li').css('display', 'none');
-		$('.content > li').eq(index).css('display', 'block');
+		$('#layout-content > .layout-tabbed').css('display', 'none');
+		$('#layout-content > .layout-tabbed').eq(index).css('display', 'block');
 
-		$('.tab li').removeClass('select');
+		$('#layout-tab li').removeClass('select');
 		$(this).addClass('select');
 	});
 });
