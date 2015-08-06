@@ -1,0 +1,28 @@
+body {
+	padding: 1em;
+}
+
+header, article, aside, footer {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #ccc;
+	text-align: center;
+}
+
+header, article, aside {
+	margin-bottom: 1em;
+}
+
+article {
+	float: left;
+	width: 66.67%;
+}
+
+aside {
+	float: right;
+	width: 31.25%;
+}
+
+footer {
+	clear: both;
+}
