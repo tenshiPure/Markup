@@ -1,0 +1,55 @@
+div.selectbox {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	position: relative;
+}
+
+div.selectbox a.select {
+	border: solid #ddd 1px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	width: 170px;
+	color: #262626;
+	text-decoration: none;
+	cursor: default;
+}
+
+div.selectbox a.select span {
+	padding: 0 22px 0 7px;
+	display: block;
+	height: 22px;
+	background: url(img/icon_select.gif) no-repeat right 0;
+	line-height: 22px;
+	cursor: default;
+}
+
+div.selectbox a.select:hover span { background-position: right -21px }
+div.selectbox a.select_focus span { background-position: right -42px !important }
+
+div.selectbox div.pulldown {
+	border: solid #bbb 1px;
+	width: 170px;
+	max-height: 150px;
+	position: absolute;
+	left: 0;
+	top: 28px;
+	background: #fff;
+	overflow: auto;
+}
+
+div.selectbox div.pulldown a {
+	border-bottom: solid #bbb 1px;
+	padding: 5px 8px;
+	display: block;
+}
+div.selectbox div.pulldown a.last-child {
+	border: none;
+}
+div.selectbox div.pulldown a:hover,
+div.selectbox div.pulldown a.selected {
+	color: #666;
+	background: #eee;
+	text-decoration: none;
+}
