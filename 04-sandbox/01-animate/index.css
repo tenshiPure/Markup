@@ -1,0 +1,39 @@
+.blocks {
+	margin-top: 10px;
+	background-color: #eee;
+	height: 100px;
+	padding: 10px;
+}
+
+.block {
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+	float: left;
+	position: relative;
+}
+
+.r {
+	background-color: #fcc;
+}
+
+.g {
+	background-color: #cfc;
+}
+
+.b {
+	background-color: #ccf;
+}
+
+.w {
+	background-color: #ccc;
+}
+
+#frame {
+	position: fixed;
+	left: 344px;
+	width: 106px;
+	top: 48px;
+	height: 106px;
+	border: 1px solid black;
+}
