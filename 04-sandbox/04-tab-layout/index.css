@@ -1,5 +1,6 @@
 #group {
 	width: 100%;
+	margin-bottom: 13px;
 }
 
 #tab {
@@ -24,4 +25,11 @@
 
 #content {
 	background-color: #ACC;
+	width: 100%;
+}
+
+textarea {
+	margin-top: 8px;
+	width: 95%;
+	height: 40px;
 }
