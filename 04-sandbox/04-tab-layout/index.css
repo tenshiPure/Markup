@@ -1,0 +1,27 @@
+#group {
+	width: 100%;
+}
+
+#tab {
+	background-color: #CCC;
+	height: 30px;
+	width: 100%;
+	margin: 0;
+	display: table;
+	table-layout: fixed;
+	list-style: none;
+}
+
+.tab__item {
+	display: table-cell;
+	text-align: center;
+	text-decoration: none;
+}
+
+.tab__item--current {
+	background-color: #EEE;
+}
+
+#content {
+	background-color: #ACC;
+}
