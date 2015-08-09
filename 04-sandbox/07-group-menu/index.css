@@ -1,12 +1,13 @@
 #group {
 	background-color: #ccc;
-	width: 30%;
+	width: 80%;
 }
 
 #group__list {
 	list-style: none;
 	font-size: 1.5rem;
 	cursor: pointer;
+	padding: 5px 8px;
 }
 
 #group__mark {
@@ -16,4 +17,8 @@
 
 .group__item:not(:first-child) {
 	display: none;
+}
+
+.group__item + .group__item {
+	border-top: 1px solid black;
 }
