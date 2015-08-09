@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>サンプル</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<form>
+			<h2>autofocus</h2>
+			<input type="text" autofocus>
+
+			<h2>autocomplete</h2>
+			<input type="text" name="autocomplete" autocomplete="on">
+
+			<h2>list</h2>
+			<input type="text" list="lists">
+			<datalist id="lists">
+				<option value="chrome"></option>
+				<option value="firefox"></option>
+				<option value="opera"></option>
+			</datalist>
+
+			<h2>required</h2>
+			<input type="text" required>
+
+			<h2>pattern</h2>
+			<input type="text" pattern="\d{3}">
+
+			<h2>step</h2>
+			<input type="number" step="2">
+
+			<h2>placeholder</h2>
+			<input type="email" placeholder="メールアドレス">
+
+			<br><br>
+			<input type="submit" value="submit">
+		</form>
+	</body>
+</html>
