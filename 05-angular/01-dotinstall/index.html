@@ -1,0 +1,145 @@
+<html>
+	<head>
+		<title>サンプル</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="../angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body ng-app="App">
+		<h2>バインド</h2>
+		<input type="text" ng-model="name">
+		<p>hello, {{ name }}</p>
+
+		<h2>コントローラ</h2>
+		<div ng-controller="MainController">
+			<h3>length</h3>
+			<p>{{ users.length }} users.</p>
+
+			<h3>repeat</h3>
+			<ul>
+				<li ng-repeat="user in users">
+					{{ user.name }} {{user.score }}
+				</li>
+			</ul>
+
+			<h2>フィルタ</h2>
+			<h3>upper case</h3>
+			<ul>
+				<li ng-repeat="user in users">
+					{{ user.name|uppercase }} {{user.score }}
+				</li>
+			</ul>
+
+			<h3>number</h3>
+			<p>{{ 25 * 500 | number }}</p>
+
+			<h3>date</h3>
+			<p>{{ today|date:'yyyy-MM-dd' }}</p>
+
+			<h3>limit</h3>
+			<ul>
+				<li ng-repeat="user in users|limitTo:5">
+					{{ user.name }} {{ user.score }}
+				</li>
+			</ul>
+
+			<h3>sort</h3>
+			<ul>
+				<li ng-repeat="user in users|orderBy:'score'">
+					{{ user.name }} {{ user.score }}
+				</li>
+			</ul>
+
+			<h3>sort & limit</h3>
+			<ul>
+				<li ng-repeat="user in users|orderBy:'-score'|limitTo:3">
+					{{ user.name }} {{ user.score }}
+				</li>
+			</ul>
+
+			<h3>name/score filter</h3>
+			<p><input type="text" ng-model="query"></p>
+			<ul>
+				<li ng-repeat="user in users|filter:query">
+					{{ user.name }} {{ user.score }}
+				</li>
+			</ul>
+
+			<h3>name filter</h3>
+			<p><input type="text" ng-model="query2.name"></p>
+			<ul>
+				<li ng-repeat="user in users|filter:query2">
+					{{ user.name }} {{ user.score }}
+				</li>
+			</ul>
+
+			<h2>repeat</h2>
+			<h3>loop variables</h3>
+			<ul>
+				<li ng-repeat="user in users">
+					{{ $index }} : {{ user.name }} {{ user.score }}, first : {{ $first }}, middle : {{ $middle }}, last : {{ $last }}
+				</li>
+			</ul>
+
+			<h3>class</h3>
+			<ul>
+				<li ng-repeat="user in users" ng-class-even="'even'" ng-class-odd="'odd'">
+					{{ $index }} : {{ user.name }} {{ user.score }}, first : {{ $first }}, middle : {{ $middle }}, last : {{ $last }}
+				</li>
+			</ul>
+
+			<h3>click</h3>
+			<ul>
+				<li ng-repeat="user in users" ng-controller="UserController">
+					{{ user.name }} {{ user.score }}
+					<button ng-click="increment()">+1</button>
+				</li>
+			</ul>
+
+			<h2>form</h2>
+			<h3>submit</h3>
+			<form ng-submit="add()">
+				<p>Name: <input type="text" ng-model="user.name"></p>
+				<p><input type="submit" value="add"></p>
+			</form>
+			<pre>{{ user|json }}</pre>
+
+			<h3>validate</h3>
+			<form name="myForm2" novalidate>
+				<p>Name: <input type="text" name="name" ng-model="user2.name" required ng-minlength="3" ng-maxlength="6"></p>
+				<span ng-show="myForm2.name.$error.required">required!</span>
+				<span ng-show="myForm2.name.$error.minlength">too short!</span>
+				<span ng-show="myForm2.name.$error.maxlength">too long!</span>
+			</form>
+			<pre>{{ user2|json }}</pre>
+
+			<h3>other type</h3>
+			<form name="myForm3" novalidate>
+				<p>Name: <input type="text" name="name" ng-model="user3.name"></p>
+
+				<p>Score: <input type="number" name="name" ng-model="user3.score"></p>
+
+				<p>Email: <input type="email" name="email" ng-model="user3.email"></p>
+				<span ng-show="myForm3.email.$error.email">not valid email!</span>
+
+				<p>Web: <input type="url" name="url" ng-model="user3.url"></p>
+				<span ng-show="myForm3.url.$error.url">not valid url!</span>
+
+				<p>Adult: <input type="checkbox" ng-model="user3.adult" ng-true-value="'adult'" ng-false-value="'child'"></p>
+
+				<p>
+					Phone:
+					<input type="radio" ng-model="user3.phone" value="iPhone">iPhone
+					<input type="radio" ng-model="user3.phone" value="Android">Android
+				</p>
+
+				<p>Memo: <textarea ng-model="user3.memo" na-maxlength="140"></textarea>{{ 140 - user3.memo.length }}</p>
+
+				<p>Color: <select ng-model="user3.color" ng-options="color for color in ['red', 'blue', 'green']" ng-init="user3.color='red'"></select></p>
+			</form>
+			<pre>{{ user3|json }}</pre>
+		</div>
+	</body>
+</html>

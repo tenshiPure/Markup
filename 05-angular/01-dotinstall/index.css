@@ -1,0 +1,19 @@
+h2 {
+	background-color: #00ffaa;
+	width: 50%;
+}
+
+h3 {
+	background-color: #00aaff;
+	width: 50%;
+}
+
+.even {
+	background: #ccc;
+	width: 30%;
+}
+
+.odd {
+	background-color: #eee;
+	width: 30%;
+}
